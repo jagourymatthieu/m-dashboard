@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Dashboard -->
+	<definition name="dashboard" template="/WEB-INF/jsp/tiles/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/jsp/tiles/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/tiles/menu.jsp" />
+		<put-attribute name="content" value="/WEB-INF/jsp/dashboard/index.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/tiles/footer.jsp" />
+	</definition>
+
+	<!-- Comics -->
+	<definition name="comics/index" >
+		<put-attribute name="content" value="/WEB-INF/jsp/content/comics/index.jsp" />
+	</definition>
+	
+	<!-- Notes Frais -->
+	<!-- <definition name="noteFrais/index">
+		<put-attribute name="content">
+			<definition template="/WEB-INF/jsp/tiles/fragment.jsp">
+				<put-attribute name="vue-content"
+					value="/WEB-INF/jsp/fonctionnalite/noteFrais/index.jsp" />
+			</definition>
+		</put-attribute>
+		<put-attribute name="liste"
+			value="/WEB-INF/jsp/fonctionnalite/noteFrais/liste.jsp" />
+		<put-attribute name="detail"
+			value="/WEB-INF/jsp/fonctionnalite/noteFrais/detail.jsp" />
+		<put-attribute name="resume" value="/WEB-INF/jsp/fonctionnalite/noteFrais/resume.jsp" />
+		<put-attribute name="portletGeneral" 
+			value="/WEB-INF/jsp/fonctionnalite/noteFrais/portletGeneral.jsp"/>
+		<put-attribute name="listeFrais" value="/WEB-INF/jsp/fonctionnalite/frais/liste.jsp" />
+	</definition> -->
+
+</tiles-definitions>
