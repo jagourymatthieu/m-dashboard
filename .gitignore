@@ -4,6 +4,8 @@
 *~
 .classpath
 .project
+.classpath.xml
+.project.xml
 .settings
 bin
 build
@@ -15,3 +17,5 @@ dependency-reduced-pom.xml
 README.html
 .idea
 *.iml
+.springBeans
+.factorypath
